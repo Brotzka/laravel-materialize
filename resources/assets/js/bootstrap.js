@@ -10,8 +10,10 @@ window._ = require('lodash');
 try {
     window.$ = window.jQuery = require('jquery');
 
-    require('bootstrap-sass');
-} catch (e) {}
+    window.Materialize = require('materialize-css');
+} catch (e) {
+    console.error(e);
+}
 
 /**
  * We'll load the axios HTTP library which allows us to easily issue requests

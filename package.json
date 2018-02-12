@@ -1,5 +1,12 @@
 {
     "private": true,
+    "version": "1.0.0",
+    "description": "Frontend for the materialize-laravel-project",
+    "author": {
+        "name": "Fabian Hagen",
+        "email": "fabianhagen87@gmail.com"
+    },
+    "license": "MIT",
     "scripts": {
         "dev": "npm run development",
         "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -11,11 +18,13 @@
     },
     "devDependencies": {
         "axios": "^0.17",
-        "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.1",
         "jquery": "^3.2",
         "laravel-mix": "^1.0",
         "lodash": "^4.17.4",
         "vue": "^2.5.7"
+    },
+    "dependencies": {
+        "materialize-css": "^0.100.2"
     }
 }
