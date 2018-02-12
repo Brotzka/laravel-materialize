@@ -65,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Berlin',
 
     /*
     |--------------------------------------------------------------------------
@@ -92,6 +92,18 @@ return [
     */
 
     'fallback_locale' => 'en',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Application Available Locales
+    |--------------------------------------------------------------------------
+    |
+    | These are the languages which are available and which will be used by the
+    | translation-manager. 
+    | For more see https://github.com/Brotzka/Laravel-Translation-Manager
+    |
+    */
+    'available_locales' => ['de', 'en', 'sv'],
 
     /*
     |--------------------------------------------------------------------------
@@ -167,6 +179,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Brotzka\TranslationManager\TranslationManagerServiceProvider::class,
 
         /*
          * Application Service Providers...
